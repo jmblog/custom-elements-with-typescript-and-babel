@@ -1,0 +1,39 @@
+{
+  "name": "custom-elements-with-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm-run-all --parallel build:*",
+    "start": "npm-run-all --parallel start:*",
+    "build:es6": "webpack --config webpack.es6.js",
+    "build:babel": "webpack --config webpack.babel.js",
+    "build:ts": "webpack --config webpack.ts.js",
+    "build:ts-babel": "webpack --config webpack.ts.babel.js",
+    "start:es6": "webpack-dev-server --config webpack.es6.js --port 8081 --open",
+    "start:babel": "webpack-dev-server --config webpack.babel.js  --port 8082 --open",
+    "start:ts": "webpack-dev-server --config webpack.ts.js  --port 8083 --open",
+    "start:ts-babel": "webpack-dev-server --config webpack.ts.babel.js  --port 8084 --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yoshihide Jimbo",
+  "license": "MIT",
+  "dependencies": {
+    "lit-html": "^0.7.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-custom-element-classes": "^0.1.0",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "html-webpack-plugin": "^2.30.1",
+    "npm-run-all": "^4.1.2",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "webpack": "^3.9.1",
+    "webpack-dev-server": "^2.9.5"
+  }
+}

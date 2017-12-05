@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    //   "lib": ["dom", "es2016"],
+    "moduleResolution": "node",
+    //   "noImplicitAny": true,
+    //   "noUnusedLocals": true,
+    //   "noUnusedParameters": true,
+    //   "strictNullChecks": true,
+    //   "suppressImplicitAnyIndexErrors": true,
+    "target": "ES6"
+    //   "experimentalDecorators": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
